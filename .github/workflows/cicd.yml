@@ -19,4 +19,7 @@ jobs:
           script: |
             cd /home/yc-user/app
             docker compose down
+            cd /home/yc-user/app/backend
+            git pull
+            cd /home/yc-user/app
             docker compose up -d --build
